@@ -73,8 +73,31 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+
+function recebeTresArg(a, b, c){
+  if(arguments.length ===1) {
+    return console.log(a)
+  } 
+
+  if(arguments.length ===2) {
+    return console.log(a + b)
+  } 
+  
+  if(arguments.length ===3){
+    return console.log ( ((a+b)/c) )
+  }
+
+ if(!arguments.length){
+   return false
+  }
+
+ return null
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
-```
+
+recebeTresArg(1) // 1
+recebeTresArg(2, 3) //5
+recebeTresArg(1, 2, 3) //1
+recebeTresArg() // false
+recebeTresArg(1,2,3,4)
