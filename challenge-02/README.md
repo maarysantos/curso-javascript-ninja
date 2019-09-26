@@ -100,4 +100,4 @@ recebeTresArg(1) // 1
 recebeTresArg(2, 3) //5
 recebeTresArg(1, 2, 3) //1
 recebeTresArg() // false
-recebeTresArg(1,2,3,4)
+recebeTresArg(1,2,3,4) //null
